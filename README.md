@@ -15,4 +15,21 @@ python download_abide.py \
   --roi cc200 \
   --fg filt_noglobal
 
+# ABIDE FCN Generator
+
+Python script to generate Functional Connectivity Networks (FCNs) from ABIDE preprocessed ROI time series `.1D` files using Nilearn.
+
+## Requirements
+
+pip install pandas tqdm nilearn numpy
+
+## Usage
+
+python generate_fcn.py \
+  --ts_dir ./Abide/abide_dparsf_cc200 \
+  --pheno_csv ./Abide/Phenotypic_V1_0b_preprocessed1.csv \
+  --out_dir ./Abide/outputs/dparsf \
+  --roi cc200 \
+  --method correlation
+
 
