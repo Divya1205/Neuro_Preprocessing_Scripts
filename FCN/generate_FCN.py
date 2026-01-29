@@ -25,9 +25,9 @@ def compute_fcns(ts_dir, pheno_csv, roi='cc200', method='correlation'):
             ts_list.append(ts)
             valid_subjects.append(fname)
         else:
-            print(f"❌ Missing: {fpath}")
+            print(f" Missing: {fpath}")
 
-    print(f"\n✅ Loaded {len(ts_list)} time series")
+    print(f"\n Loaded {len(ts_list)} time series")
 
     # Compute FC
     conn = ConnectivityMeasure(kind=method, standardize="zscore_sample")
