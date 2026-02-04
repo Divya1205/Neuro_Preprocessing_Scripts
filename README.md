@@ -35,4 +35,8 @@ python generate_fcn.py \
   --roi cc200 \
   --method correlation
 
+# download-kaggle-series-folder-wise.ipynb
+
+Run in Kaggle https://www.kaggle.com/competitions/rsna-intracranial-aneurysm-detection to zip and download a specific DICOM series folder along with train.csv metadata.
+Outputs: {SeriesInstanceUID}.zip and train.csv with download links.
 
