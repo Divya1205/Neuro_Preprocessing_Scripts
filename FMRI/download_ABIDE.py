@@ -22,7 +22,7 @@ def download_abide_roi(pheno_csv, out_dir, pipe="cpac", roi="cc200", fg="filt_no
         try:
             wget.download(url, out_file)
         except:
-            print(f"⚠️ Failed to download: {url}")
+            print(f"Failed to download: {url}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

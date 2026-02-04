@@ -1,6 +1,9 @@
 # ABIDE .1D Downloader
 
-Python script to download ABIDE preprocessed ROI time series files from the AWS public dataset.
+Python script to download ABIDE preprocessed ROI time series files using the AWS CLI. Download the phenotypic data file as well. [Click here to download the phenotypic CSV file](https://raw.githubusercontent.com/preprocessed-connectomes-project/abide/master/Phenotypic_V1_0b_preprocessed1.csv)  
+
+Right-click and choose “Save As” if it opens as text.
+
 
 ## Requirements
 
