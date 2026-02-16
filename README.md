@@ -1,3 +1,23 @@
+# MRI
+
+To install dependencies for MRI preprocessing, use one of the following:
+
+pip install -r requirements_mri_preproc.txt
+conda create -n mri_env --file requirements_mri_preproc.txt
+
+
+## download-kaggle-series-folder-wise.ipynb
+
+Run in Kaggle https://www.kaggle.com/competitions/rsna-intracranial-aneurysm-detection to zip and download a specific DICOM series folder along with train.csv metadata.
+Outputs: {SeriesInstanceUID}.zip and train.csv with download links.
+
+## Dicom_Loading_Preprocessing.ipynb 
+
+Inspects raw DICOM MRI data for one patient, extracts metadata, orientation, voxel spacing, calculates isotropy/anisotropy and visualizes a slice.
+Prepares data for downstream NIfTI conversion or deep learning tasks in the RSNA aneurysm challenge.
+
+
+
 # FMRI
 
 ## ABIDE .1D Downloader
@@ -39,21 +59,4 @@ python generate_fcn.py \
   --roi cc200 \
   --method correlation
 
-# MRI
-
-To install dependencies for MRI preprocessing, use one of the following:
-
-pip install -r requirements_mri_preproc.txt
-conda create -n mri_env --file requirements_mri_preproc.txt
-
-
-## download-kaggle-series-folder-wise.ipynb
-
-Run in Kaggle https://www.kaggle.com/competitions/rsna-intracranial-aneurysm-detection to zip and download a specific DICOM series folder along with train.csv metadata.
-Outputs: {SeriesInstanceUID}.zip and train.csv with download links.
-
-## Dicom_Loading_Preprocessing.ipynb 
-
-Inspects raw DICOM MRI data for one patient, extracts metadata, orientation, voxel spacing, calculates isotropy/anisotropy and visualizes a slice.
-Prepares data for downstream NIfTI conversion or deep learning tasks in the RSNA aneurysm challenge.
 
